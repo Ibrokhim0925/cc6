@@ -27,3 +27,19 @@ const employee2 = new Employee("John Smith", "Marketing");
 const manager1 = new Manager("Peter Jones", "Engineering", 12);
 const manager2 = new Manager("Susan Lee", "HR", 6);
 
+// Step 5: Create a class called Company
+class Company {
+    constructor() {
+        this.employees = [];
+    }
+    addEmployee(employee) {
+        this.employees.push(employee);
+    }
+    listEmployees() {
+        console.log("--- Company Employee Roster ---");
+        this.employees.forEach(employee => {
+            console.log(employee.describe());
+        });
+        console.log("----------");
+    }
+}
