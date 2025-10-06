@@ -43,3 +43,14 @@ class Company {
         console.log("----------");
     }
 }
+
+//Step 6: Instantiate a Company object, add employees, and list them
+console.log("\nInstantiating a company and adding employees...");
+const myTechCompany = new Company();
+
+myTechCompany.addEmployee(employee1);
+myTechCompany.addEmployee(employee2);
+myTechCompany.addEmployee(manager1);
+myTechCompany.addEmployee(manager2);
+
+myTechCompany.listEmployees();
